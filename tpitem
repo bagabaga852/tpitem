@@ -1,0 +1,40 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "傳送道具";
+    Text = "By.企鵝";
+    Icon = "rbxthumb://type=Asset&id=6605284335&w=150&h=150"
+})
+
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "點擊傳送道具"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+        Sound.SoundId = "rbxassetid://4826619573"
+        Sound:Play()
+        local Sound = Instance.new("Sound",game:GetService("SoundService"))
+        Sound.SoundId = "rbxassetid://4826619573"
+        Sound:Play()
+        local Sound = Instance.new("Sound",game:GetService("SoundService"))
+        Sound.SoundId = "rbxassetid://4826619573"
+        Sound:Play()
+        local Sound = Instance.new("Sound",game:GetService("SoundService"))
+        Sound.SoundId = "rbxassetid://4826619573"
+        Sound:Play()
+        local Sound = Instance.new("Sound",game:GetService("SoundService"))
+        Sound.SoundId = "rbxassetid://4826619573"
+        Sound:Play()
+        local Sound = Instance.new("Sound",game:GetService("SoundService"))
+        Sound.SoundId = "rbxassetid://4826619573"
+        Sound:Play()
+        local Sound = Instance.new("Sound",game:GetService("SoundService"))
+        Sound.SoundId = "rbxassetid://4826619573"
+        Sound:Play()
+        local Sound = Instance.new("Sound",game:GetService("SoundService"))
+        Sound.SoundId = "rbxassetid://4826619573"
+        Sound:Play()
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
